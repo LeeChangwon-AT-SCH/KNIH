@@ -98,6 +98,7 @@
 					document.getElementById("submit").innerHTML = "제출중.... 완료될 때까지 기다려주세요";
 					formData.append('data', new Blob([JSON.stringify(data)], { type: "application/json" }));
 					formData.append('filed', document.getElementById("f").files[0]);
+					formData.append('filed2', document.getElementById("f2").files[0]);
 					$.ajax({
 						type: 'POST',
 						url: '{{url_for("moody")}}',
