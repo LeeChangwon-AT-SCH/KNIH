@@ -107,6 +107,7 @@ def moody():
     #     print("not")
     #     pass
     # else:
+    print(request.files)
     if 'filed' in request.files:
         f = request.files['filed']
         print("file1 is", f)
